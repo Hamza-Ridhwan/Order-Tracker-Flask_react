@@ -12,7 +12,7 @@ const PlaceOrder = () => {
         try {
             const token = localStorage.getItem('token');
             const response = await axios.post(
-                'http://localhost:5000/orders',
+                'https://order-tracker-flask-react.onrender.com/orders',
                 { product, quantity },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

@@ -12,7 +12,7 @@ const EditOrder = () => {
         const fetchOrder = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get(`http://localhost:5000/orders/${orderId}`, {
+                const response = await axios.get(`https://order-tracker-flask-react.onrender.com/orders/${orderId}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setProduct(response.data.product);
@@ -29,7 +29,7 @@ const EditOrder = () => {
         try {
             const token = localStorage.getItem('token');
             await axios.put(
-                `http://localhost:5000/orders/${orderId}/edit`,
+                `https://order-tracker-flask-react.onrender.com/orders/${orderId}/edit`,
                 { product, quantity },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

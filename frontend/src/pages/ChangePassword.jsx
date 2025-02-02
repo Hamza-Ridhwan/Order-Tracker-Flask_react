@@ -11,7 +11,7 @@ const ChangePassword = () => {
         try {
             const token = localStorage.getItem('token');
             await axios.put(
-                'http://localhost:5000/change-password',
+                'https://order-tracker-flask-react.onrender.com/change-password',
                 { new_password: newPassword },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
