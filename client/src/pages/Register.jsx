@@ -10,7 +10,7 @@ const Register = () => {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://order-tracker-flask-react.onrender.com/register', { email, password });
+            await axios.post('http://localhost:5000/register', { email, password });
             navigate('/');
         } catch (error) {
             alert('Registration failed');

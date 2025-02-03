@@ -10,7 +10,7 @@ const OrderTracker = () => {
         const fetchOrder = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get(`https://order-tracker-flask-react.onrender.com/orders/${orderId}`, {
+                const response = await axios.get(`http://localhost:5000/orders/${orderId}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setOrder(response.data);
