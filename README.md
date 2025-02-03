@@ -35,7 +35,8 @@ An Order Tracker application that allows users to track the status and delivery 
 - Werkzeug: A WSGI utility library for Flask.
 
 
-## App Demo 
+## Challenged faced
+- Couldn't deploy the app due to the failure of gunicorn installation. (After Installation it didn't work)
 
 
 ## Contact
