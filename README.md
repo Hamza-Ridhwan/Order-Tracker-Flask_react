@@ -11,13 +11,14 @@ An Order Tracker application that allows users to track the status and delivery 
 - Login: As a user, I want to log in to access my order history and details.
 - Place Order: As a user, I want to place an order and get an order ID (e.g., name of the item, number of the item).
 - Track Order: As a user, I want to track the current status of my order.
+- Change Password: As a user, I want to change my password for security.
+
+## Future Additional features 
 - View Order History: As a user, I want to view my past orders.
 - Cancel Order: As a user, I want to cancel an order if it has not been shipped.
 - Edit Order: As a user, I want to modify my order before it is shipped.
 - View Delivery Updates: As a user, I want to receive notifications about my order's delivery status.
 - Rate Order: As a user, I want to rate my order experience.
-- Change Password: As a user, I want to change my password for security.
-
 
 
 ## Technologies Used
